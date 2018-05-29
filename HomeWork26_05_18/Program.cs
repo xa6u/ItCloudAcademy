@@ -26,6 +26,8 @@ n binary representation bit #3
             foreach (int j in arrayForVerif)
             {
                 int result = j & i;
+                /*нужно интерпретировать значение, чтобы в ответе было не 8, что является 1<<3, а как в программе
+                чтобы выводило 0, или 1. Для этого можно добавить выведение определённой строки, в зависимости от result*/
                 Console.WriteLine(result);
             }
 
