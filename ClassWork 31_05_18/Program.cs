@@ -70,7 +70,25 @@ namespace ClassWork_31_05_18
                 Console.Write($"{item},");
             }
 
-            //logarifm
+            //triangle of Pascale
+
+            int dimension = 15;
+            int[][] array = new int[dimension][];
+            for (int i = 0; i < dimension; i++)
+            {
+                array[i] = new int[i];
+                for (int j = 0; j < array[i].Length; j++)
+                {
+                    int leftIndex= j - 1, rightIndex=j;
+                    int prevCol = i - 1;
+                    //доделать треугольник паскаля
+
+                    array[i][j] = 1;
+                    Console.Write(array[i][j]);
+                }
+                Console.WriteLine();
+            }
+            
 
 
         }
