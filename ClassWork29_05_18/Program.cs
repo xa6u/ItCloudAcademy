@@ -80,7 +80,7 @@ namespace ClassWork29_05_18
             {
                 for (int j = 1; j < 10; j++)
                 {
-                    
+
                     Console.WriteLine($"{i}*{j}={i*j}");
 
                 }
@@ -89,7 +89,7 @@ namespace ClassWork29_05_18
                 Console.MoveBufferArea();
                 //нарисовать кружочек, и двигать влево-вправо
             }
-
+            
         }
     }
 }
