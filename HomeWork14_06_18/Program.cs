@@ -8,7 +8,7 @@ namespace HomeWork14_06_18
 {
     class Program
     {
-        //Exersise 10.5
+        //Exersise 10.5 переделать чтобы функции принимали и возврвщали значения
         /// <summary>
         /// Prints a max value of 2 numbers
         /// </summary>
@@ -97,7 +97,7 @@ namespace HomeWork14_06_18
         static int SummOfSeveralNumbersRecursion(int n)
         {
             //Console.WriteLine("Enter the number, and you wil see the summ of all it numbers from 1 ");
-            if (n == 0) return n;
+            if (n == 1) return n;
             return n + SummOfSeveralNumbersRecursion(n - 1);
 
            
