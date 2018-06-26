@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Homework_22._06._18
 {    
+
     class Program
     {
         static void Main(string[] args)
@@ -24,18 +25,22 @@ namespace Homework_22._06._18
                 intArray[i] = randomArrayValue;
                 Console.WriteLine(intArray[i]);
             }
-
-            Console.WriteLine("Enter index of first element");
-            s1 = Console.ReadLine();
-            firstElement = int.Parse(s1);
-            Console.WriteLine("Enter index of second element");
-            s2 = Console.ReadLine();
-            secondElement = int.Parse(s2);
-
-
-
+            
             try
             {
+                Console.WriteLine("Enter index of first element");
+                s1 = Console.ReadLine();
+                Console.WriteLine("Enter index of second element");
+                s2 = Console.ReadLine();
+
+                var a = int.TryParse(s1, out firstElement);
+                var b = int.TryParse(s2, out secondElement);
+
+                if (!a||!b)
+                {
+                    throw new FormatException("The element is not in the digit");
+                }
+
                 if (firstElement > intArray.Length || secondElement > intArray.Length || firstElement < intArray.Length || secondElement < intArray.Length)
                 {
                     throw new IndexOutOfRangeException("The element is not in the array");
@@ -46,6 +51,10 @@ namespace Homework_22._06._18
                 Console.WriteLine(summ);
             }
             catch (IndexOutOfRangeException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch(FormatException ex)
             {
                 Console.WriteLine(ex.Message);
             }
