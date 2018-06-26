@@ -41,7 +41,7 @@ namespace Homework_22._06._18
                     throw new FormatException("The element is not in the digit");
                 }
 
-                if (firstElement > intArray.Length || secondElement > intArray.Length || firstElement < intArray.Length || secondElement < intArray.Length)
+                if (firstElement > intArray.Length || secondElement > intArray.Length || firstElement < intArray.First() || secondElement < intArray.First())
                 {
                     throw new IndexOutOfRangeException("The element is not in the array");
                 }
