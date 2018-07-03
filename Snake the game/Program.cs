@@ -28,7 +28,7 @@ namespace Snake_the_game
         }
     }
 
-    class Rabit
+    class Rabbit
     {
 
     }
