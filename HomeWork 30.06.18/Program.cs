@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HomeWork_30._06._18;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -72,15 +73,69 @@ namespace HomeWork_30._06._18
             }
         }
 
+        public TecnicalBook(string author, string title, int pageNumber,string scienceBranch):
+            base(author,title,pageNumber)
+        {
+            _scienceBranch = scienceBranch;
+        }
 
         public override void Print()
         {
-            Console.WriteLine($"Book info: Author {Author}, Title {Title}, number of pages {PageNumber}, Science branch {ScienceBranch}");
+            //Console.WriteLine($"Book info: Author {Author}, Title {Title}, number of pages {PageNumber}, Science branch {ScienceBranch}");
+            Console.Write($"Science branch: {ScienceBranch}, ");
+            base.Print();
+            
         }
     }
     class Fiction :Book
     {
+        public Fiction(string author, string title, int pageNumber) :
+            base(author, title, pageNumber)
+        {
 
+        }
+
+    }
+
+    public enum BookType
+    {
+        All,
+        Tech,
+        Fiction
+    }
+
+    class Library
+    {
+
+        private List<Book> _books;
+
+        public void Add(Book book)
+        {
+            _books.Add(book);
+        }
+
+        public void Print(BookType bookType)
+        {
+            switch (bookType)
+            {
+                case BookType.All:
+                    break;
+                case BookType.Tech:
+                    break;
+                case BookType.Fiction:
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        public Library()
+        {
+            _books = new List<Book>;
+        }
+
+           
+        }
     }
 
 
@@ -89,6 +144,15 @@ namespace HomeWork_30._06._18
     {
         static void Main(string[] args)
         {
+        //var books = new List<Book>();
+        //books.Add(new Book("Lion Tolstoy", "Voskresenie", 345));
+        //books.Add(new TecnicalBook ("Jefrey Richter", "C# Core", 344, ".Net" ));
+
+        //foreach (var item in books)
+        //{
+        //    item.Print();
+        //}
+
 
 
         }
