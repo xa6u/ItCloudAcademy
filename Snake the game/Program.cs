@@ -8,11 +8,14 @@ namespace Snake_the_game
 {
     class Snake
     {
-        public void SnakeMove()
+        public void SnakeHeadMove()
         {
 
         }
+        public void SnakeSegmentMove()
+        {
 
+        }
         public void SnakeGrove()
         {
 
