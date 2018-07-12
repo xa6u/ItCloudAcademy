@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework 24_05_18", "Homework 24_05_18\Homework 24_05_18.csproj", "{DB1FFAA1-32FC-487A-9620-CD06F425122E}"
 EndProject
@@ -30,6 +30,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snake the game", "Snake the game\Snake the game.csproj", "{078A1303-C050-4D2B-BBEB-6F8081FA9F79}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWork 30.06.18", "HomeWork 30.06.18\HomeWork 30.06.18.csproj", "{35AADD72-90BA-41D5-87AB-FC1FA1AB9CC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassWork 05.07.18", "ClassWork 05.07.18\ClassWork 05.07.18.csproj", "{B0D1AB39-4EEB-4F03-A07F-083561C9E194}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassWork07.12.18", "ClassWork07.12.18\ClassWork07.12.18.csproj", "{3D86D4BD-0761-4654-9E77-3FA6928228CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +97,14 @@ Global
 		{35AADD72-90BA-41D5-87AB-FC1FA1AB9CC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35AADD72-90BA-41D5-87AB-FC1FA1AB9CC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35AADD72-90BA-41D5-87AB-FC1FA1AB9CC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0D1AB39-4EEB-4F03-A07F-083561C9E194}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0D1AB39-4EEB-4F03-A07F-083561C9E194}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0D1AB39-4EEB-4F03-A07F-083561C9E194}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0D1AB39-4EEB-4F03-A07F-083561C9E194}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D86D4BD-0761-4654-9E77-3FA6928228CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D86D4BD-0761-4654-9E77-3FA6928228CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D86D4BD-0761-4654-9E77-3FA6928228CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D86D4BD-0761-4654-9E77-3FA6928228CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
