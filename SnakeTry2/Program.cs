@@ -43,12 +43,9 @@ namespace SnakeTry2
         }
         public void Print(int x, int y)
         {
-
             Console.SetCursorPosition(x, y);
             Console.Write("*");
-            Thread.Sleep(100);
-
-
+            Thread.Sleep(100);            
         }
         public void Draw()
         {
@@ -73,8 +70,9 @@ namespace SnakeTry2
                             Print(x, y);
                             Thread.Sleep(100);
                             x++;
-                        } while (key.Key != ConsoleKey.UpArrow);
+                        } while (key.Key == ConsoleKey.UpArrow);
                         break;
+
                     case ConsoleKey.LeftArrow:
                         for (int i = 0; i < 10; i++)
                         {
