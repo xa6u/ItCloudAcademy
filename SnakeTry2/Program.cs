@@ -50,10 +50,12 @@ namespace SnakeTry2
         public void Draw()
         {
             int x = 10, y = 10;
-            ConsoleKeyInfo key;
+            ConsoleKeyInfo key =new ConsoleKeyInfo();
             do
             {
+               // key = new ConsoleKeyInfo();
                 Console.CursorVisible = false;
+                if (Console.KeyAvailable)
                 key = Console.ReadKey(true);
 
                 switch (key.Key)
