@@ -9,6 +9,9 @@ namespace SnakeTry2
 {
     class Snake
     {
+        static readonly int x = 80;
+        static readonly int y = 26;
+
         public enum Direction
         {
             Up,
@@ -19,6 +22,9 @@ namespace SnakeTry2
 
         public void DrawPlayground()
         {
+            //Console.SetWindowSize(x + 1, y + 1);
+            //Console.SetBufferSize(x + 1, y + 1);
+            //Console.CursorVisible = false;
 
             Console.SetWindowSize(40, 30);
             for (int i = 0; i < 40; ++i)
@@ -41,9 +47,21 @@ namespace SnakeTry2
                 Console.Write('*');
             }
         }
+
+        //struct Coords
+        //{
+        //    public int x { get; set; }
+        //    public int y { get; set; }
+        //}
+        //class PlaygroundWalls
+        //{
+        //    private char ch;
+        //    private List<Coords> wall = new List<Coords>(); 
+        //}
         public void Print(int x, int y)
         {
             Console.SetCursorPosition(x, y);
+            List<int> length = new List<int>(); 
             Console.Write("*");
             Thread.Sleep(100);            
         }
@@ -61,43 +79,37 @@ namespace SnakeTry2
                 switch (key.Key)
                 {
                     case ConsoleKey.RightArrow:
-                        //for (int i = 0; i < 10; i++)
-                        //{
-                        //    Print(x, y);
-                        //    Thread.Sleep(100);
-                        //    x++;
-                        //}
                         do
                         {
                             Print(x, y);
                             Thread.Sleep(100);
                             x++;
-                        } while (key.Key == ConsoleKey.UpArrow);
+                        } while (key.Key == ConsoleKey.P);
                         break;
 
                     case ConsoleKey.LeftArrow:
-                        for (int i = 0; i < 10; i++)
+                        do
                         {
                             Print(x, y);
                             Thread.Sleep(100);
                             x--;
-                        }
+                        } while (key.Key == ConsoleKey.P);
                         break;
                     case ConsoleKey.UpArrow:
-                        for (int i = 0; i < 10; i++)
+                        do
                         {
                             Print(x, y);
                             Thread.Sleep(100);
                             y--;
-                        }
+                        } while (key.Key == ConsoleKey.P);
                         break;
                     case ConsoleKey.DownArrow:
-                        for (int i = 0; i < 10; i++)
+                        do
                         {
                             Print(x, y);
                             Thread.Sleep(100);
                             y++;
-                        }
+                        } while (key.Key == ConsoleKey.P);
                         break;
                     default:
                         break;
